@@ -13,7 +13,7 @@ public class SimpleCalculator extends HttpServlet {
         String txtnum3 = request.getParameter("txtnum3");
         String txtnum4 = request.getParameter("txtnum4");
 
-        double num1 = 0, num2 = 0, num3 = 0, num4 = 0, sum = 0, mul = 0;
+        double num1 = 0, num2 = 0, num3 = 0, num4 = 0, sum = 0, mul = 1;
         if (txtnum1 != "") {
             num1 = Double.parseDouble(txtnum1);
         }
