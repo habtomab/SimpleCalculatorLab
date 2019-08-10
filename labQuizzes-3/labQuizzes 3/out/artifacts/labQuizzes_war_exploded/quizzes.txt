@@ -1,0 +1,5 @@
+link to the source is 
+https://rkamou.github.io/CS472_Wap_Repo/calculator.zip
+after download the archive, decompress and open it as 
+an IntellJ project, configure the runtime environment 
+with tomcat, and it is good to go.

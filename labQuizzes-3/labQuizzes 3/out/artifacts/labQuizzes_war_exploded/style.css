@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+/*Web-Inf*/
+body, h1, h2, h3, h4, h5, h6, p, ul, dl, ol, form, fieldset, input,
+  label, table, tbody, tfoot, th, tr, td, textarea, select {
+  font-family: "helvetica neue", helvetica, "lucinda sans unicode",
+    "sans serif";
+  font-weight: normal;
+  color: #333;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url("images/background.png");*/
+    font-family: Verdana, Tahoma,sans-serif;
+    font-size: 8pt;
+}
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: left;}
+.item3 { grid-area: right; }
+.item4 { grid-area: center;} 
+.item6 { grid-area: footer; } 
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header' 
+    'left center center center'
+    'footer footer footer footer';
+    grid-template-rows: 80px 500px 80px;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-template-columns: 165px auto auto auto;
+}
+
+@media only screen and (max-width: 600px){
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header' 
+        'left center' 
+        'footer footer';
+        grid-template-rows: 80px 50% 50% 80px;
+      grid-gap: 10px;
+      background-color: green;
+      padding: 10px;
+      position: static;
+      min-width: 420px;
+    }
+}
+
+.circle{
+  height: 200px;
+  width: 200px;
+  background-color: #bbb;
+  border-radius: 50%;  
+  overflow: auto; 
+  position: absolute;
+  top:0px;
+  right: 0px;
+}
+div{
+  position: relative;
+  padding: 5px;
+}
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left; 
+  font-size: 30px;
+  border : 1px green solid;
+  padding: 10px;
+  overflow: auto;
+}
+
+
+a {
+    background: #53777a;
+    color: #fff;
+    width: auto;
+    text-decoration: none;
+    border: 1px solid #5b5b5b;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+    padding: 5px;
+    display: inline-block;
+    float: right;
+}
+input[type="submit"] {
+    background: #53777a;
+    color: #fff;
+    width: 80px;
+    text-decoration: none;
+    border: 1px solid #5b5b5b;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 10px;
+}
+input[type="number"] {
+    background: white;
+    color: #black;
+    width: 80px;
+    width: 125px;
+    padding: 5px 10px;
+    margin: 10px;
+    display: inline-block;
+}
+input[type="text"] {
+    background: white;
+    color: #black;
+    width: 20px;
+    margin-bottom: 10px; 
+    padding: 5px 10px; 
+}
+span{
+    margin: 10px;
+}
+.attention{
+  color: red;
+}
+
+a:hover{
+  cursor: pointer;
+
+}
+label{
+  display: block;
+}
